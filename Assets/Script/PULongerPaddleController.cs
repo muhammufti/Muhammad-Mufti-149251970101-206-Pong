@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PUSpeedUPController : MonoBehaviour
+public class PULongerPaddleController : MonoBehaviour
 {
     public PowerUpManager manager;
     public Collider2D ball;
@@ -12,7 +12,7 @@ public class PUSpeedUPController : MonoBehaviour
     {
         if (collision == ball)
         {
-            ball.GetComponent<BallControl>().ActivatePUSpeedUp(magnitude);
+            ball.GetComponent<BallControl>().transform.localScale += new Vector3(0, 2, 0);
             manager.RemovePowerUp(gameObject);
         }
     }

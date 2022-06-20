@@ -10,8 +10,18 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void OpenMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
     public void OpenAuthor()
     {
         Debug.Log("Created By Muhammad Mufti 149251970101-206");
+    }
+
+    public void OpenCredit()
+    {
+        SceneManager.LoadScene("Credit");
     }
 }
